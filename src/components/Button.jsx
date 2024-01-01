@@ -8,7 +8,12 @@ const Button = ({ assetUrl, link }) => {
       className={styles.btnBlack}
       onClick={() => window.open(link, "_blank")}
     >
-      <img src={assetUrl} alt="expo_icon" className={styles.btnIcon} />
+      <img
+        src={assetUrl}
+        alt="expo_icon"
+        className={styles.btnIcon}
+        style={{ marginRight: 10 }}
+      />
       <div className="flex flex-col justify-start ml-4">
         <p
           className={`${styles.btnText}
